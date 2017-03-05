@@ -1,0 +1,1 @@
+UPDATE brasse SET `Age (jours)` = DATEDIFF(now(),`Date de fabrication`);

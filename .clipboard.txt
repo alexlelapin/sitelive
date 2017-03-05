@@ -1,0 +1,11 @@
+/.appdata
+/.cagefs
+/.cl.selector
+/.php
+/.shadow
+/.spamassassin
+/Maildir
+/PhpProject1
+/domains
+/imap
+/public_html

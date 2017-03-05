@@ -1,0 +1,62 @@
+Return-Path: <>
+Delivered-To: info@alexandrepigeon.ca
+Received: from cp1.bluebirdhosting.net
+	by cp1.bluebirdhosting.net (Dovecot) with LMTP id LEkIG9juj1jURQ4AuIpgnQ
+	for <info@alexandrepigeon.ca>; Mon, 30 Jan 2017 20:56:40 -0500
+Return-path: <>
+Envelope-to: info@alexandrepigeon.ca
+Delivery-date: Mon, 30 Jan 2017 20:56:40 -0500
+Received: from mail by cp1.bluebirdhosting.net with local (Exim 4.87)
+	id 1cYNgW-003wgr-Ar
+	for info@alexandrepigeon.ca; Mon, 30 Jan 2017 20:56:40 -0500
+X-Failed-Recipients: pidg1243@hotmail
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@cp1.bluebirdhosting.net>
+To: info@alexandrepigeon.ca
+Content-Type: multipart/report; report-type=delivery-status; boundary=1485827800-eximdsn-736646712
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1cYNgW-003wgr-Ar@cp1.bluebirdhosting.net>
+Date: Mon, 30 Jan 2017 20:56:40 -0500
+
+--1485827800-eximdsn-736646712
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  pidg1243@hotmail
+    Unrouteable address
+
+--1485827800-eximdsn-736646712
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; cp1.bluebirdhosting.net
+
+Action: failed
+Final-Recipient: rfc822;pidg1243@hotmail
+Status: 5.0.0
+
+--1485827800-eximdsn-736646712
+Content-type: message/rfc822
+
+Return-path: <info@alexandrepigeon.ca>
+Received: from alexandr by cp1.bluebirdhosting.net with local (Exim 4.87)
+	(envelope-from <info@alexandrepigeon.ca>)
+	id 1cYNgV-003wgl-ID
+	for pidg1243@hotmail; Mon, 30 Jan 2017 20:56:40 -0500
+To: pidg1243@hotmail
+Subject: patate
+Date: Tue, 31 Jan 2017 01:56:39 +0000
+From: Alexandre Pigeon <info@alexandrepigeon.ca>
+Message-ID: <17f9c1a0038973f0568f822182c3c3e6@www.alexandrepigeon.ca>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+message body
+
+
+--1485827800-eximdsn-736646712--
