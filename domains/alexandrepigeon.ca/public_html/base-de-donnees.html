@@ -1,294 +1,127 @@
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Fabrication de la bière</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- bootsrap css-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Fichier pour tableau-->
+        <link type="text/css" href="app/css/bootstrap-table.css" rel="stylesheet">
+        <!-- jquery et bootsrap js-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- Fichier pour tableau-->
+        <script src="app/js/bootstrap-table.js"></script>
+        <!-- Fichiers pour les graphiques-->
+        <script src="app/js/jquery.canvasjs.min.js"></script>
+        <script src="app/js/req_db.js" type="text/javascript"></script>
+        
+        <!-- Fichier pour la traduction du tableaux-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/locale/bootstrap-table-fr-FR.min.js"></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- ===========Custom CSS=============== -->
+        <!-- ===========Custom CSS=============== -->
+        <link href="app/css/style.css" rel="stylesheet">
+    </head>
+    <body>
 
-    <link type="text/css" href="app/css/bootstrap-table.css" rel="stylesheet">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="app/js/bootstrap-table.js"></script>
-    <script src="app/js/jquery.canvasjs.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/locale/bootstrap-table-fr-FR.min.js"></script>
-    <link href="app/css/style.css" rel="stylesheet">
-    <title>Fabrication de la bière</title>
-</head>
-
-<body>
-    <a NAME="Accueil" id="accueil"></a>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-                <a class="navbar-brand" href="index.html">Accueil</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html#contenu">Contenu du site</a>
+        <!--Tag pour le bouton haut de la page -->
+        <a id="base-de-donnees"></a>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Accueil</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html#contenu">Contenu du site</a>
                         <li>
                             <!--============================BASE DE DONNÉES DROPDOWN MENU=======================================-->
-                            <li><a href="base-de-donnees.html">Base de données</a></li>
-                            <!--==================================RECHERCHES DROPDOWN MENU========================================-->
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recherches<b class="caret"></b></a>
-                                <ul class="dropdown-menu" id="ul-navbar">
-                                    <li><a href="recherches.html">Présentation</a></li>
-                                    <li><a href="recherches-eau.html">Eau</a></li>
-                                    <li><a href="recherches-grains.html">Grains</a></li>
-                                    <li><a href="recherches-houblons.html">Houblons</a></li>
-                                    <li><a href="recherches-levures.html">Levures</a></li>
-                                    <li><a href="recherches-manipulations.html">Manipulations</a></li>
-                                    <li><a href="recherches-degustation.html">Dégustation</a></li>
-                                </ul>
-                            </li>
-                            <!--========================================RECETTES DROPDOWN MENU====================================-->
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recettes<b class="caret"></b></a>
-                                <ul class="dropdown-menu" id="ul-navbar">
-                                    <li><a href="recettes.html">Toutes les recettes</a></li>
-                                    <li><a href="recettes-houblonnee.html">Pale Ale Houblonnée</a></li>
-                                    <li><a href="recettes-witbier.html">Witbier Orange Coriandre</a></li>
-                                    <li><a href="recettes-canneberges.html">Pale Ale aux Canneberges</a></li>
-                                    <li><a href="recettes-aaa.html">Ale Ambrée Américaine</a></li>
-                                    <li><a href="recettes-abbaye.html">Ale d'Abbaye</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="equipe.html">Notre équipe</a></li>
-                            <li><a href="nousjoindre.html">Nous joindre</a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- /.container -->
-    </nav>
-    <!--===================================== /.navbar-collapse============================================= -->
-    <div class="container-fluid">
-    	<div class="col-md-12">
-    		<div class="page-header">
-    			<h1>
-    				Base de données
-    			</h1>
-    		</div>
-    		<div class="panel panel-success">
-<h2>Graphique de production 2017</h2>
-    			<div class="panel-body" id="idTableau hidden-xs">
-
-                <script type="text/javascript">
-                  $(document).ready(function() {
-                      $.getJSON("data.php", function(result) {
-
-                          var chart = new CanvasJS.Chart("chartContainer", {
-                              animationEnabled: true,
-                              animationDuration: 3000,
-                              toolTip: {
-                              backgroundColor: "rgba(0,0,0,0.6)",
-                              fontColor:"white",
-                              borderColor:"white",
-                              shared: true,
-
-                              content: "{name}: {y} L"
-                              },
-                              legend: {
-                               fontColor: "red"
-                              },
-                              backgroundColor: "rgba(0,0,0,0.5)",
-                              title: {
-                                  /*text: "Graphique de production 2017",*/
-                                  fontColor: "white"
-                              },
-                              dataPointWidth: 15,
-                              axisX: {
-                                  /*title: "Date de fabrication",*/
-                                  titleFontColor: "white",
-                                  labelFontColor: "white",
-                                  margin:10,
-                                  gridThickness: 1,
-                                  includeZero: true,
-                                  gridColor:"rgba(255,255,255,0.2)",
-                                  /*valueFormatString: "YYYY/MM/DD" ,*/
-                                  interval: 2
-                              },
-                              axisY: {
-                                  gridThickness: 1,
-                                  gridColor: "rgba(255,255,255,0.2)",
-                                  margin:20,
-                                  titleFontColor: "white",
-                                  labelFontColor: "white",
-                                  maximum: 75,
-                                  suffix: " L"
-                              },
-                              axisY2:{
-                               title : "Volume cumulatif",
-                               titleFontColor: "red",
-                               labelFontColor: "red",
-                               maximum: 1500,
-                               suffix: " L"
-                              },
-                              axisX2:{
-
-                              },
-                              data: [{
-                                  indexLabelOrientation: "vertical",
-                                  indexLabelPlacement: "outside",
-                                  showInLegend: false,
-                                  color: "rgba(255,255,255,0.2)",
-                                  type: "column",
-                                  /*indexLabel: "{y}"+" L",*/
-                                  indexLabelFontColor: "white",
-                                  indexLabelFontWeight: "bold",
-
-                                  name: "Volume du brassin",
-                                  dataPoints: result
-                              },{
-                      					type: "area",
-                                axisXType: "secondary",
-                                axisYType: "secondary",
-                                name: "Volume cumulatif",
-                                indexLabelWrap: false,
-                                indexLabelFontColor: "red",
-                                indexLabelFontWeight: "bold",
-
-
-                                color: "rgba(163, 13, 13,0.4)",
-                      					dataPoints: [
-                                  {label: "#29",y: 19,},
-                                  {label: "#30",y: 38,indexLabel:"38 L"},
-                                  {label: "#31",y: 57},
-                                  {label: "#32",y: 67,indexLabel:"67 L"},
-                                  {label: "#33",y: 90},
-                                  {label: "#34",y: 100,indexLabel:"100 L"},
-                                  {label: "#35",y: 119},
-                                  {label: "#36",y: 139,indexLabel:"139 L"},
-                                  {label: "#37",y: 186},
-                                  {label: "#38",y: 209, indexLabel:"209 L"}
-                      					]
-                      				}]
-                          });
-
-                          chart.render();
-                      });
-                  });
-              </script>
-                  <div class="img-responsive" id="chartContainer" style="width: auto; height: 450px;"></div>
-    					<div class="col-lg-12 col-md-12">
-    						<table 	id="table"
-    			                	data-show-columns="true"
-     				                data-height="460">
-                            <div class="table-responsive">
-                            <table class="table table-striped" >
-                          </table>
-                          </span>
-                          </div>
-    						</table>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </div>
-
-    <script type="text/javascript">
-       var $table = $('#table');
-             $table.bootstrapTable({
-                url: 'list-user.php',
-                search: true,
-                pagination: true,
-                buttonsClass: 'primary myFuckingColor',
-                showFooter: false,
-                minimumCountColumns: 2,
-                sortName:'Date de fabrication',
-                sortOrder:'desc',
-                striped:'true',
-                pageSize: 5,
-                pageList: [5,10, 25, 50],
-                columns: [
-                  { field: 'idBrassin', title: 'idBrassin', sortable : false},
-                  { field: 'Nom', title: 'Nom', sortable : true,},
-                  { field: 'Style', title: 'Style', sortable : true,},
-                  { field: 'Date de fabrication', title: 'Date de fabrication', sortable : true,},
-                  { field: 'Age (jours)', title: 'Age (jours)', sortable : true,},
-                  { field: 'ABV', title: 'ABV', sortable : true,},
-                  { field: 'IBU', title: 'IBU', sortable : true,},
-                  { field: 'Levures', title: 'Levures', sortable : true,},
-                  { field: 'Houblons', title: 'Houblons', sortable : true,},
-                  { field: 'SRM', title: 'SRM', sortable : true,},
-                  { field: 'Efficacite', title: 'Efficacite', sortable : true,},
-                  { field: 'Quantite levure', title: 'Quantite levure', sortable : true,},
-                  { field: 'Pitch rate', title: 'Pitch rate', sortable : true,},
-                  { field: 'Age levure', title: 'Age levure', sortable : true,},
-                  { field: 'Yeast starter', title: 'Yeast starter', sortable : true,},
-                  { field: 'T° pitch', title: 'T° pitch', sortable : true,},
-                  { field: 'T° fermentation', title: 'T° fermentation', sortable : true,},
-                  { field: 'OG', title: 'OG', sortable : true,},
-                  { field: 'FG', title: 'FG', sortable : true,},
-                  { field: 'Volume initial', title: 'Volume initial', sortable : true,},
-                  { field: 'Volume embouteillé', title: 'Volume embouteillé', sortable : true,},
-                  { field: 'Date du transfert', title: 'Date du transfert', sortable : true,},
-                  { field: 'Durée fermentation primaire', title: 'Durée fermentation primaire', sortable : true,},
-                  { field: 'Date embouteillage', title: 'Date embouteillage', sortable : true,},
-                  { field: 'durée fermentation secondaire', title: 'durée fermentation secondaire', sortable : true,},
-                  { field: 'Commentaires fermentation', title: 'Commentaires fermentation', sortable : true,},
-                  { field: 'Cold crash', title: 'Cold crash', sortable : true,},
-                  { field: 'Eau utilisée', title: 'Eau utilisée', sortable : true,},
-                  { field: 'Addtifs eau', title: 'Addtifs eau', sortable : true,},
-                  { field: 'T° chaudron', title: 'T° chaudron', sortable : true,},
-                  { field: 'T° grains', title: 'T° grains', sortable : true,},
-                  { field: 'Quantité grain', title: 'Quantité grain', sortable : true,},
-                  { field: 'T° empêtage début', title: 'T° empêtage début', sortable : true,},
-                  { field: 'T° empâtage fin', title: 'T° empâtage fin', sortable : true,},
-                  { field: 'pH 10 mins', title: 'pH 10 mins', sortable : true,},
-                  { field: 'pH 60 mins', title: 'pH 60 mins', sortable : true,},
-                  { field: 'Quantité d\'eau empatage', title: 'Quantité d\'eau empatage', sortable : true,},
-                  { field: 'Ratio eau/grains', title: 'Ratio eau/grains', sortable : true,},
-                  { field: 'Quantité d\'eau Mash out', title: 'Quantité d\'eau Mash out', sortable : true,},
-                  { field: 'T° mash out', title: 'T° mash out', sortable : true,},
-                  { field: 'Commentaires empâtage', title: 'Commentaires empâtage', sortable : true,},
-                  { field: 'Quantité recirculée', title: 'Quantité recirculée', sortable : true,},
-                  { field: 'Quantité d\'eau sparge', title: 'Quantité d\'eau sparge', sortable : true,},
-                  { field: 'Température sparge', title: 'Température sparge', sortable : true,},
-                  { field: 'Commentaires sparge', title: 'Commentaires sparge', sortable : true,},
-                  { field: 'Volume pre-boil', title: 'Volume pre-boil', sortable : true,},
-                  { field: 'OG pre-boil', title: 'OG pre-boil', sortable : true,},
-                  { field: 'Position du couvercle', title: 'Position du couvercle', sortable : true,},
-                  { field: 'Volume final', title: 'Volume final', sortable : true,},
-                  { field: 'Quantité d\'eau évaporée', title: 'Quantité d\'eau évaporée', sortable : true,},
-                  { field: 'Commentaire boil', title: 'Commentaire boil', sortable : true,},
-                  { field: 'Commentaires généraux', title: 'Commentaires généraux', sortable : true,},
-                  { field: 'Personnes présentes', title: 'Personnes présentes', sortable : true,},
-                  { field: 'Heure début', title: 'Heure début', sortable : true,},
-                  { field: 'Heure fin', title: 'Heure fin', sortable : true,},
-                  { field: 'Temps', title: 'Temps', sortable : true,}, ],
-                });
-        </script>
-        <div class="container">
-            <div class="row">
-
-
-        	<div class="col-md-12">
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; alexandrepigeon.ca 2017</p>
+                        <li><a href="base-de-donnees.html">Base de données</a></li>
+                        <!--==================================RECHERCHES DROPDOWN MENU========================================-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recherches<b class="caret"></b></a>
+                            <ul class="dropdown-menu" id="ul-navbar">
+                                <li><a href="recherches.html">Présentation</a></li>
+                                <li><a href="recherches-eau.html">Eau</a></li>
+                                <li><a href="recherches-grains.html">Grains</a></li>
+                                <li><a href="recherches-houblons.html">Houblons</a></li>
+                                <li><a href="recherches-levures.html">Levures</a></li>
+                                <li><a href="recherches-manipulations.html">Manipulations</a></li>
+                                <li><a href="recherches-degustation.html">Dégustation</a></li>
+                            </ul>
+                        </li>
+                        <!--========================================RECETTES DROPDOWN MENU====================================-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recettes<b class="caret"></b></a>
+                            <ul class="dropdown-menu" id="ul-navbar">
+                                <li><a href="recettes.html">Toutes les recettes</a></li>
+                                <li><a href="recettes-houblonnee.html">Pale Ale Houblonnée</a></li>
+                                <li><a href="recettes-witbier.html">Witbier Orange Coriandre</a></li>
+                                <li><a href="recettes-canneberges.html">Pale Ale aux Canneberges</a></li>
+                                <li><a href="recettes-aaa.html">Ale Ambrée Américaine</a></li>
+                                <li><a href="recettes-abbaye.html">Ale d'Abbaye</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="equipe.html">Notre équipe</a></li>
+                        <li><a href="nousjoindre.html">Nous joindre</a></li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-      </div>
-  </div>
-    </div>
+            <!-- /.container -->
+        </nav>
+        <!--===================================== /.navbar-collapse============================================= -->
+
+
+        <!--Container principal -->
+        <div class="container-fluid">    
+            <!--Titre-->
+            <div class="page-header"><h1>Base de données</h1></div>
+
+            <div id="db"><!--Permet d'ajuster les paramètres d'affichage-->
+
+                <!--Tableau-->
+                <table id="table_db">
+                    <div class="table-responsive">
+                </table>
+                <hr>
+                <!--Graphique 2017-->
+                <h2>Graphique de production 2017</h2>
+                <div class="img-responsive" id="chartContainer" style="width: auto; height: 450px;"></div>
+                <hr>
+                <!--Graphique 2016-->
+                <div>
+                <h2>Graphique de production 2016 <a class="btn btn-default collapse-classes" href = "#2016" style="color: black">Afficher</a></h2>
+                    
+                </div>
+                
+                <div class="img-responsive" id="chartContainer2016" style="width: auto; visibility: hidden; height: 0px;"></div>
+            </div>  
+
+            <footer>
+                <div class="row" id="2016">
+                    <div class="col-lg-12">
+                        <p>Copyright &copy; alexandrepigeon.ca 2017</p>
+                    </div>
+                </div>
+            </footer>
+
+
+        </div> <!--Fin container principal-->    
 
 
 
 
-      </body>
+    </body>
 </html>
