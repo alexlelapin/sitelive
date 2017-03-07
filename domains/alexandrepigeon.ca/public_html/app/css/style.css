@@ -1,16 +1,78 @@
+/*========================================================================
+                    Mise en forme générale
+========================================================================*/
+.row {
+    color: white;
+}
+
+/*Titre de la page*/
+.page-header {
+    color: white;
+}
+
+section, html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url('../images/index/brick.jpg');
+    background-attachment: fixed;
+    padding-top: 50px;
+}
+
+/*Ajout d'ombrage en arrière plan*/
 #ombrage{
-background-color: rgba(0, 0, 0, 0.5);
-
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.canvasjs-chart-canvas{
-    width: auto;
+/*tableaux page d'accueil'*/
+#petitTableau {
+    background: rgba(0, 0, 0, 0.2);
+    border-color: white;
+    min-width: 300px;
+    max-width: 450px;
 }
 
+
+/*carré de la section contenu du site*/
+.img-portfolio {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+}
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/*========================================================================
+                    FIN Mise en forme générale
+========================================================================*/
+
+/*========================================================================
+                    Barre de navigation
+========================================================================*/
+
+/*Couleur menu déroulant barre de navigation*/
 #ul-navbar{
-  background-color: black;
-
+    background-color: black;
 }
+
+#entete {
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+
+/*========================================================================
+                    FIN Barre de navigation
+========================================================================*/
+
+/*
+=============================================================================
+                            vidéo
+=============================================================================
+*/
 .video-section .pattern-overlay {
     background-color: rgba(71, 71, 71, 0.59);
     padding: 110px 0 32px;
@@ -34,13 +96,6 @@ background-color: rgba(0, 0, 0, 0.5);
     -moz-text-shadow: 1px 1px 1px #000;
 
 }
-
-@media screen and (max-width: 650px) {
-    .video-section h1 {
-        font-size: 40px;
-    }
-}
-
 .video-section h3 {
     font-size: 25px;
     font-weight: lighter;
@@ -51,144 +106,20 @@ background-color: rgba(0, 0, 0, 0.5);
     display: none;
 }
 
-.player {
-    font-size: 1px;
-}
-
-section {
-    height: 100%;
-}
-
-#dropdown-entete {
-    color: white;
-    background-color: black;
-}
-
-#btn_envoyer {
-    background-color: white;
-    color: black;
-}
-
-body {
-    background-image: url('../images/index/brick.jpg');
-    background-attachment: fixed;
-}
-
-#petitTableau {
-    background: rgba(0, 0, 0, 0.2);
-    border-color: white;
-    min-width: 300px;
-    max-width: 450px;
-}
-
-#entete {
-    background: rgba(0, 0, 0, 0.2);
-    color: white;
-}
-
-.carousel-inner>.item>img, .carousel-inner>.item>a>img{
-    margin: 0 auto;
-}
 
 
-.bootstrap-table th {
-    text-align: center;
-    white-space: nowrap;
-}
 
-.bootstrap-table td {
-    text-align: center;
-    white-space: nowrap;
-}
+/*
+=============================================================================
+                            FIN vidéo
+=============================================================================
+*/
+/*
+=============================================================================
+                            Carousel
+=============================================================================
+*/
 
-.row {
-    color: white;
-}
-
-.fixed-table-pagination li a {
-    background-color: black;
-    color: white;
-}
-
-.fixed-table-pagination li.active a {
-    border-color: white;
-    background-color: white;
-    color: black;
-}
-
-.fixed-table-pagination li.active a:hover {
-    background-color: black;
-    color: white;
-    border-color: white;
-}
-
-.btn-primary {
-    background-color: black;
-    border-color: black;
-}
-
-.keep-open .btn-group {
-    background-color: red;
-    color: red;
-    border-color: red;
-}
-
-.myFuckingColor, .myFuckingColor:active, .myFuckingColor:hover, .myFuckingColor:focus, .open>.dropdown-toggle.myFuckingColor:focus, .open>.dropdown-toggle.myFuckingColor:hover, .open>.myFuckingColor:active {
-    background-color: black;
-    color: white;
-    border-color: white;
-}
-
-.dropup .dropdown-menu, .navbar-fixed-bottom .dropdown .dropdown-menu {
-    background-color: black;
-}
-
-.dropdown-menu>li>a {
-    color: white;
-    background-color: black;
-}
-
-.pull-right .dropdown-menu {
-    background-color: black;
-    color: white !important;
-}
-
-.page-header {
-    color: white;
-}
-
-
-/*!
- * Start Bootstrap - Modern Business (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
-
-
-/* Global Styles */
-
-html, body {
-    height: 100%;
-}
-
-body {
-    padding-top: 50px;
-    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-}
-
-.img-portfolio {
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 200px;
-}
-
-.img-hover:hover {
-    opacity: 0.8;
-}
-
-
-/* Home Page Carousel */
 
 header.carousel {
     height: 50%;
@@ -206,31 +137,86 @@ header.carousel .fill {
     background-size: cover;
 }
 
+.carousel-inner>.item>img, .carousel-inner>.item>a>img{
+    margin: 0 auto;
+}
+
+
+
+
+/*
+=============================================================================
+                            FIN Carousel
+=============================================================================
+*/
+
+
+
+/*========================================================================
+                        Tableau base de données
+========================================================================*/
+/*Couleur tableau page base de données*/
+#db{
+    color:white;
+}
+/*Couleurs pour les boutons du tableau base de données*/
+.fixed-table-pagination li a {
+    background-color: white;
+    color: black;
+}
+
+.fixed-table-pagination li.active a {
+    border-color: white;
+    background-color: black;
+    color: white;
+}
+
+.fixed-table-pagination li.active a:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.keep-open .btn-group {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+/*Couleur choix de page tableau base de données*/
+.dropup .dropdown-menu, .navbar-fixed-bottom .dropdown .dropdown-menu {
+    background-color: black;
+}
+
+.myFuckingColor, .myFuckingColor:active, .myFuckingColor:hover, .myFuckingColor:focus, .open>.dropdown-toggle.myFuckingColor:focus, .open>.dropdown-toggle.myFuckingColor:hover, .open>.myFuckingColor:active {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+.dropdown-menu>li>a {
+    color: white;
+    background-color: black;
+}
+/*Réglage affichage tableau bootstrap dans la page base de données*/
+.bootstrap-table th {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.bootstrap-table td {
+    text-align: center;
+    white-space: nowrap;
+
+}
+
+/*========================================================================
+                        FIN Tableau base de données
+========================================================================*/
+
 
 /* 404 Page Styles */
 
 .error-404 {
     font-size: 100px;
-}
-
-
-/* Pricing Page Styles */
-
-.price {
-    display: block;
-    font-size: 50px;
-    line-height: 50px;
-}
-
-.price sup {
-    top: -20px;
-    left: 2px;
-    font-size: 20px;
-}
-
-.period {
-    display: block;
-    font-style: italic;
 }
 
 
@@ -258,6 +244,11 @@ footer {
     }
 }
 
+@media screen and (max-width: 650px) {
+    .video-section h1 {
+        font-size: 40px;
+    }
+}
 .panel.panel-success {
     color: white;
     background-color: rgba(0, 0, 0, 0.2);

@@ -1,6 +1,6 @@
 
 <?php
-	require 'db.php';
+	require 'bd.php';
 		$array_pageBrasse = array(
 			31=>"recettes-abbaye.html",
 			33=>'recettes-houblonnee.html',
@@ -16,7 +16,7 @@
 		$arrVal = array();
 	 		while ($rowList = mysqli_fetch_array($sqltran)) {
 						$name = array(
-							'idBrassin' => (array_key_exists($rowList['idBrassin'],$array_pageBrasse)? "<a href=".$array_pageBrasse[$rowList['idBrassin']].">".$rowList['idBrassin']."</a>": $rowList['idBrassin']),
+							'idBrassin' => (array_key_exists($rowList['idBrassin'],$array_pageBrasse)? "<a href=".str_replace("#","",$array_pageBrasse[$rowList['idBrassin']]).">".$rowList['idBrassin']."</a>": $rowList['idBrassin']),
 							'Nom'=> $rowList['Nom'],
 							'Style'=> $rowList['Style'],
 							'Date de fabrication'=> $rowList['Date de fabrication'],
