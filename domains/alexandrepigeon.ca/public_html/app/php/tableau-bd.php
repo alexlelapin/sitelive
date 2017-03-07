@@ -1,5 +1,6 @@
 
 <?php
+header("Access-Control-Allow-Origin: *");
 	require 'bd.php';
 		$array_pageBrasse = array(
 			31=>"recettes-abbaye.html",
@@ -11,7 +12,6 @@
 			38=>'recettes-houblonnee.html#',
 		);
 
-		/* array_search(37, $array_pageBrasse)*/
  		$sqltran = mysqli_query($con, "SELECT * FROM brasse")or die(mysqli_error($con));
 		$arrVal = array();
 	 		while ($rowList = mysqli_fetch_array($sqltran)) {

@@ -1,5 +1,7 @@
 
+
 <?php
+header("Access-Control-Allow-Origin: *");
 	require 'bd.php';
 
     $data_points = array();

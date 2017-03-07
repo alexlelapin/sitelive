@@ -9,6 +9,7 @@ and open the template in the editor.
         <title>Fabrication de la bière</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- bootsrap css-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <!-- Fichier pour tableau-->
@@ -20,11 +21,13 @@ and open the template in the editor.
         <script src="app/js/bootstrap-table.js"></script>
         <!-- Fichiers pour les graphiques-->
         <script src="app/js/jquery.canvasjs.min.js"></script>
-        <script src="app/js/req_db.js" type="text/javascript"></script>
         
+
         <!-- Fichier pour la traduction du tableaux-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/locale/bootstrap-table-fr-FR.min.js"></script>
-
+        
+        
+        <script src="app/js/req_db.js" type="text/javascript"></script>
         <!-- ===========Custom CSS=============== -->
         <link href="app/css/style.css" rel="stylesheet">
     </head>
@@ -91,10 +94,9 @@ and open the template in the editor.
 
             <div id="db"><!--Permet d'ajuster les paramètres d'affichage-->
 
-                <!--Tableau-->
-                <table id="table_db">
-                    <div class="table-responsive">
-                </table>
+                <!--Tableau-->     
+                
+                <table 	id="table_db"></table>
                 <hr>
                 <!--Graphique 2017-->
                 <h2>Graphique de production 2017</h2>
@@ -102,10 +104,10 @@ and open the template in the editor.
                 <hr>
                 <!--Graphique 2016-->
                 <div>
-                <h2>Graphique de production 2016 <a class="btn btn-default collapse-classes" href = "#2016" style="color: black">Afficher</a></h2>
-                    
+                    <h2>Graphique de production 2016 <a class="btn btn-default collapse-classes" href = "#2016" style="color: black">Afficher</a></h2>
+
                 </div>
-                
+
                 <div class="img-responsive" id="chartContainer2016" style="width: auto; visibility: hidden; height: 0px;"></div>
             </div>  
 
