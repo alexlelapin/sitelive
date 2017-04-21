@@ -6,11 +6,10 @@
 
 
 $(document).ready(function () {
-    $.getJSON("http://alexandrepigeon.ca/app/php/graphique-2016.php", function (result) {
 
         var chart = new CanvasJS.Chart("chartContainer2016", {
             animationEnabled: true,
-            animationDuration: 3000,
+            animationDuration: 1000,
             toolTip: {
                 backgroundColor: "rgba(0,0,0,0.6)",
                 fontColor: "white",
@@ -64,7 +63,35 @@ $(document).ready(function () {
                     indexLabelFontColor: "white",
                     indexLabelFontWeight: "bold",
                     name: "Volume du brassin",
-                    dataPoints: result
+                    dataPoints:[
+                        {label: "#2", y:36},
+                        {label: "#3", y:36},
+                        {label: "#4", y:46},
+                        {label: "#5", y:46},
+                        {label: "#6", y:46},
+                        {label: "#7", y:46},
+                        {label: "#8", y:22},
+                        {label: "#9", y:21},
+                        {label: "#10", y:21},
+                        {label: "#11", y:23},
+                        {label: "#12", y:21},
+                        {label: "#13", y:20},
+                        {label: "#14", y:22},
+                        {label: "#15", y:23},
+                        {label: "#16", y:20},
+                        {label: "#17", y:21},
+                        {label: "#18", y:23},
+                        {label: "#19", y:20},
+                        {label: "#20", y:23},
+                        {label: "#21", y:24},
+                        {label: "#22", y:23},
+                        {label: "#23", y:20},
+                        {label: "#24", y:21},
+                        {label: "#25", y:25},
+                        {label: "#26", y:21},
+                        {label: "#27", y:18},
+                        {label: "#28", y:18}
+                    ]
                 }, {
                     type: "area",
                     axisXType: "secondary",
@@ -109,5 +136,5 @@ $(document).ready(function () {
         });
 
         chart.render();
-    });
+  
 });

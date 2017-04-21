@@ -1,295 +1,667 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
-    <!-- ===========Custom CSS=============== -->
-    <link href="app/css/style.css" rel="stylesheet">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!-- ===========Custom CSS=============== -->
+        <link href="app/css/style.css" rel="stylesheet">
+        <title>Fabrication de la bière</title>
+    </head>
 
-    <title>Fabrication de la bière</title>
-</head>
-
-<body>
-    <a NAME="Accueil" id="accueil"></a>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-                <a class="navbar-brand" href="index.html">Accueil</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html#contenu">Contenu du site</a>
+    <body>
+        <a NAME="Accueil" id="accueil"></a>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Accueil</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html#contenu">Contenu du site</a>
                         <li>
                             <!--============================BASE DE DONNÉES DROPDOWN MENU=======================================-->
-                            <li><a href="base-de-donnees.html">Base de données</a></li>
-                            <!--==================================RECHERCHES DROPDOWN MENU========================================-->
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recherches<b class="caret"></b></a>
-                                <ul class="dropdown-menu" id="ul-navbar">
-                                    <li><a href="recherches.html">Présentation</a></li>
-                                    <li><a href="recherches-eau.html">Eau</a></li>
-                                    <li><a href="recherches-grains.html">Grains</a></li>
-                                    <li><a href="recherches-houblons.html">Houblons</a></li>
-                                    <li><a href="recherches-levures.html">Levures</a></li>
-                                    <li><a href="recherches-manipulations.html">Manipulations</a></li>
-                                    <li><a href="recherches-degustation.html">Dégustation</a></li>
-                                </ul>
-                            </li>
-                            <!--========================================RECETTES DROPDOWN MENU====================================-->
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recettes<b class="caret"></b></a>
-                                <ul class="dropdown-menu" id="ul-navbar">
-                                    <li><a href="recettes.html">Toutes les recettes</a></li>
-                                    <li><a href="recettes-houblonnee.html">Pale Ale Houblonnée</a></li>
-                                    <li><a href="recettes-witbier.html">Witbier Orange Coriandre</a></li>
-                                    <li><a href="recettes-canneberges.html">Pale Ale aux Canneberges</a></li>
-                                    <li><a href="recettes-aaa.html">Ale Ambrée Américaine</a></li>
-                                    <li><a href="recettes-abbaye.html">Ale d'Abbaye</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="equipe.html">Notre équipe</a></li>
-                            <li><a href="nousjoindre.html">Nous joindre</a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- /.container -->
-    </nav>
-    <!--===================================== /.navbar-collapse============================================= -->
-
-    <!-- Page Content -->
-    <div class="container">
-
-        <!-- Page Heading/Breadcrumbs -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Levures</h1>
-                <ol class="breadcrumb">
-                    <li><a href="index.html">Accueil</a>
-                    </li>
-                    <li class="active"><a href="recherches.html">Recherches</a></li>
-                    <li class="active" id="Levures">Levures</li>
-                </ol>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Content Row -->
-        <div class="row">
-
-            <!-- Blog Post Content Column -->
-            <div class="col-lg-12">
-
-                <!-- Blog Post -->
-
-                <hr>
-
-                <!-- Date/Time -->
-                <p><i class="fa fa-clock-o"></i> Publié le 27 février 2017</p>
-
-                <hr>
-
-                <!-- Preview Image -->
-                <img class="img-responsive center-block" src="app/images/recherches/levures.jpg" alt="" style="max-height:500px">
-
-                <hr>
-                <ul>
-                 	<li>Atténuation : % de fermentation du sucre.</li>
-                 	<li>La floculation c'est l'agglomération des levures. Les lagers restent en suspension plus longtemps et réduisent davantage les sous-produits.</li>
-                 	<li>Pour le transport, utiliser un time-temperature ou un freeze indicator (Levure dans un char l'été juste 30 minutes diminue la viabilité)</li>
-                 	<li>Peu importe la marque de la levure, il est davantage important de prendre la plus fraîche.</li>
-                 	<li>Dans les  levures Wyeast il y a une petite bulle où on retrouve des nutriments de bonne qualité et du sucre, en plus d'aider à rincer le paquet pour avoir le plus de levures possible.</li>
-                 	<li>Une petite quantité de levure en santé donnera une bière bien meilleure qu’une grande quantité de levure en mauvaise santé.</li>
-                 	<li>Garder une culture pure.</li>
-                 	<li>Facteurs influençant la viabilité et l’accroissement des cellules: nutriments, température, sucre et pH.</li>
-                 	<li>Autolyse des cellules est rarement un problème, puisque ca prend plusieurs mois.</li>
-                 	<li>Connaître les caractéristiques de la souche de levure afin de faire ressortir certains aspects. Par exemple, passer d'une levure de Californie à une levure anglaise pour la même recette de bière brune accentue le goût sucré du malt et des esters fruités.</li>
-                 	<li>Utiliser plusieurs levures: pour augmenter l'atténuation, on peut ajouter des levures spécifiques à la fin de la fermentation en calculant avec le sucre restant l'impact que ça aura. Si on fait ça, on ne peut pas réutiliser la levure.</li>
-                 	<li>Isomérisation des acides alpha affecte la viabilité des levures</li>
-                 	<li>Nutriments à levures: souvent zinc en manque. Ajouter 0,2 A 0,3 mg/L de zinc, Nitrogène pour les enzymes lors de la fermentation, Calcium pour la floculation, Manganèse pour stimuler la reproduction</li>
-                </ul>
-                <h2>Fermentation</h2>
-                <h3>Température</h3>
-                <ul>
-                 	<li>Enregistrer la température de fermentation avec un <a target="_blank "href="https://www.amazon.ca/Temperature-Logger-Recorder-Points-Sensor/dp/B01N3OMXOP/ref=sr_1_1?s=industrial&ie=UTF8&qid=1488249882&sr=8-1&keywords=datalogger+with+probe+RC">data logger à température</a></li>
-                 	<li>Premier 72h plus critiques, car la majeur partie du travail s’effectue à ce moment. S’assurer d’empêcher la température d’augmenter trop.</li>
-                 	<li>Si bon pitch rate, idéalement mettre la levure en dessous de la température de fermentation puis augmenter graduellement en 12 à 36h, ce qui permettra de contrôler la multiplication des levures.</li>
-                 	<li>Si on pitch avec un peu moins de levure, pitch à une température plus élevée va aider la multiplication. Dans ce cas, il faut remonter la température à la fin de la fermentation, afin de retransformer certains composés et aider à la clarté de la bière.
-                <ul>
-                 	<li><strong>Ale</strong>: lag phase: 22-24C puis 20</li>
-                 	<li><strong>Lager</strong>: lag phase: 22-24 puis 10-14</li>
-                 	<li>Levures belges doivent être fermentées en haut de 23C</li>
-                </ul>
-                </li>
-                </ul>
-                <h3>Oxygène</h3>
-                <ul>
-                 	<li>On veut 8 A 10 ppm. Selon <a target="_blank" href="https://www.youtube.com/watch?v=75gpehf_6Gk">Wyeast 12 a 15ppm</a>.
-                <ul>
-                 	<li>Correspond à 45 secondes de brassage de cuve (8 ppm), ou une à deux minutes avec de l’oxygène pure et une pierre de diffusion (15 ppm).</li>
-                </ul>
-                </li>
-                 	<li>Mettre de l'oxygène avant de pitcher.
-                <ul>
-                 	<li>Pour une bière très haute en gravité, il faudra l'oxygéner après 12h.</li>
-                </ul>
-                </li>
-                 	<li>Trop d’oxygène est rarement un problème</li>
-                </ul>
-                <table align="center" class="table" style="max-width:500px">
-                <tbody>
-                <tr>
-                <td width="228"><strong>Méthode</strong></td>
-                <td width="193"><strong>Quantité d'oxygène dissout</strong></td>
-                <td width="105"><strong>Temps requis</strong></td>
-                </tr>
-                <tr>
-                <td style="font-weight: 400;" width="228">Éclaboussures lors du transfert vers le fermenteur</td>
-                <td style="font-weight: 400;">4 ppm</td>
-                <td style="font-weight: 400;">0 secondes</td>
-                </tr>
-                <tr>
-                <td style="font-weight: 400;" width="228">Brasser vigoureusement la cuve de fermentation primaire</td>
-                <td style="font-weight: 400;">8 ppm</td>
-                <td style="font-weight: 400;">40 secondes</td>
-                </tr>
-                <tr>
-                <td style="font-weight: 400;" width="228">Pompe d'aquarium avec une pierre de diffusion</td>
-                <td style="font-weight: 400;">8 ppm</td>
-                <td style="font-weight: 400;">5 minutes</td>
-                </tr>
-                <tr>
-                <td style="font-weight: 400;" width="228">Oxygène pure avec une pierre de diffusion</td>
-                <td style="font-weight: 400;">10-14 ppm</td>
-                <td style="font-weight: 400;">1 à 2 minutes</td>
-                </tr>
-                </tbody>
-                </table>
-                <h2>Quantité de levures</h2>
-                Afin de reproduire plus d'une fois une bière, il est important que la quantité de levure utilisée soit constante. Il est possible d'estimer la quantité de levure nécessaire avec des calculatueurs tels que 
-                <a target="_blank" href="http://www.brewersfriend.com/yeast-pitch-rate-and-starter-calculator/">Brewer's friend</a> ou <a target="_blank" href="http://www.mrmalty.com/calc/calc.html">Mr. Malty</a> en fonction du volume ou masse de levure utilisé, ou encore à partir du nombre de paquets et de la date de production. Il est également possible de compter les cellules vivante pour augmenter la précision.entier.
-                <img class="img-responsive center-block" src="app/images/recherches/levures/starter_pitch_rate.png" alt="">
-                <h3></a>Yeast Starter</h3>
-                Le <a target="_blank" href="https://www.youtube.com/watch?v=1zUYxb-_B8A">yeast starter</a> consiste à activer la reproduction des cellules afin d'avoir une quantité de levures de départ suffisante pour la quantité de sucre à transformer.
-                <ul>
-                 	<li>Nécessaire pour des levures liquide seulement</li>
-                 	<li>27 a 30C selon internet, 22 selon le livre Yeast. Si trop chaud, affaiblir les cellules.</li>
-                 	<li>Conditions normales: 1.030 et 1.040.</li>
-                 	<li>Pour redonner vie à de vieille levure, utiliser un mout autour de 1.020</li>
-                 	<li>Un paquet de levures avec 2L d'eau et 200 g d'extrait de malt va doubler la quantité de cellule en 24 heures. Ensuite on la met au frigo pour faire décanter. Prendre la densité du liquide fermenté et jeter le surplus.
-                <ul>
-                 	<li>1g de DME pour chaque 10 ml de volume final de mout.</li>
-                </ul>
-                </li>
-                 	<li>Ale: 10 ml 8P 25C, 24 heures en aérant et en brassant de temps en temps. 100ml 8P, 25C, 24h en aérant et avec l’agitateur magnétique. 1L 12-16P, 22C, 24-48h aérant et avec l’agitateur magnétique.</li>
-                 	<li></li>
-                 	<li>Pas besoin de mettre de nutriment si ça vient du paquet. Par contre si levure réutilisé, oui.</li>
-                 	<li>pH idéal de 5.5 pour yeast starter</li>
-                 	<li>Pas de lumière</li>
-                 	<li>Laisser 12 heures dans le même bocal lorsqu’il a atteint sa gravité finale permet aux levures de remplir leur réserve de glycogène. Si on décante trop tôt, on va éliminer les levures qui sédimentent moins vite, ce sont eux qui atténuent la bière le plus.</li>
-                 	<li>Lors du pitch, maximum 6C de différence pour High krausen. Utiliser la méthode high krausen si on veut atténuer davantage une bière, car l’alcool et le bas taux de sucre empêche les levures de se réveiller.</li>
-                 	<li>Stepped starter: décanter entre chaque étape.</li>
-                 	<li>Idéalement on ne voudrait pas utiliser de levures en bas de 90% de viabilité</li>
-                </ul>
-                <h4>Comptage de cellules (utiliser un Hemocytomètre)</h4>
-                Lorsqu’on récolte la levure, elle est entre 0,8et 2 millions de cellules/ ml. Lorsqu’on connait la densité de la bouette, on divise le nombre de cellules requises par le nombre de cellules/ml afin de déterminer combien de millilitres de bouette on a besoin.
-
-                C’est un peu contre-intuitif. Comme c’est généralement lors de la multiplication que la levure s’exprime en esters et en phénols, plus on met de levure, moins les saveurs sont intenses. Une saison belge avec beaucoup de levure de départ sera donc plate et trop simple. Il faut que la levure travaille pour développer les saveurs complexes. Une pâle ale avec très peu de levure sera aussi trop « levurée » et fruitée. C’est important d’avoir une bonne quantité de levure en santé. Mais pas trop.
-
-                Diacetyl rest
-
-                C’est la réabsorbtion du diacetyl par les levures. Consite à monter la température avant la fin de la fermentation.
-                <ul>
-                 	<li>Lors de la multiplication des cellules, un taux de croissance plus haut entrainera plus d’acétolactate (précurseur du diacetyl).</li>
-                 	<li>S’assurer de faire un diacetyl rest pour une biere anglaise</li>
-                 	<li>Plus la température est haute, plus il y a de multiplication, mais également plus la réduction du diacetyl sera importante.</li>
-                 	<li>Plus les levures sont en santé et actives, plus ils réduiront rapidement le diacetyl.</li>
-                 	<li>Séparer la bière de la levure ou refroidir la bière trop tôt entrainera un haut taux de diacetyl.</li>
-                 	<li>Plus la température est froide, plus il y aura de sulfure et il sera plus difficile pour la levure de réabsorber le diacetyl, d’où l’importance de faire un diacetyl rest</li>
-                 	<li>Force test for diacetyl.
-                <ul>
-                 	<li>Consiste à prendre deux échantillons et d’en chauffer un seul puis le refroidir et le comparer à l’autre. Si on perçoit le diacetyl, il ne faut pas transférer.</li>
-                </ul>
-                </li>
-                 	<li><strong>Lager</strong>: fermentation a 8-10C pendant 2/3 de la fermentation, puis 20C pendant le dernier 1/3. Ou ajouter du mout frais en fermentation (au kraeusen) )à la fin</li>
-                 	<li><strong>Ale</strong>: Si la fermentation était en bouette (sluggish) élever la température de 3C ou attendre deux jours lorsque la gravité finale est atteinte pour s’assurer de laisser le temps aux levures de réduire le diacetyl.</li>
-                </ul>
-                <h2>Récoltes et conservation</h2>
-                <ul>
-                 	<li>Récupérer les levures avec une cuillère en enlevant le dessus</li>
-                 	<li>Les levures peuvent se conserver, autour de 2C, 1 à 2 semaines sans refaire de starter.</li>
-                 	<li>À VÉRIFIER rythme de mortalité au frigo.
-                <ul>
-                 	<li>Une augmentation du pH de 1 indique un haut taux de mortalité et on devrait jeter la levure</li>
-                </ul>
-                </li>
-                 	<li>Récolter les levures au stade optimal et être constant dans le comptage des cellules ou le poids de la bouette, inscrire ces informations au registre
-                <ul>
-                 	<li>Le meilleur moment pour récolter la levure est un à deux jours après avoir commencé le cold crash.</li>
-                 	<li>Attendre 24h de plus peut diminuer de 50% la viabilité de la levure.</li>
-                </ul>
-                </li>
-                 	<li>Entreposer les levures sèches également au frigo</li>
-                 	<li>Si on récupère les levures d’une bière avec beaucoup d'alcool, il est préférable d'enlever la bière et de le remplacer par un mout frais ou de l'eau stérile, ou de ne pas la récupérer simplement.  On ne devrait jamais réutiliser de la levure qui a fermenté une bière de plus de 7%</li>
-                 	<li>À VÉRIFIER: réutiliser des levures à partir de bouteilles</li>
-                 	<li>Réutiliser les levures de 5 A 10 générations. Est-ce qu’un yeast starter compte pour une génération ?</li>
-                </ul>
-                <h3>Top Cropping (Yeast P.148-156)</h3>
-                La technique de Yeast crop consiste à récupérer les levures sur le dessus pendant la fermentation. Personellement je crois que c’est de la marde parce qu’on enlève des levures à une batch et on en met pas assez pour une autre.
-                <ul>
-                 	<li>Récolter les levures sur le dessus de la fermentation permet d’avoir de la levure en santé et de maintenir la qualité de la bière.</li>
-                 	<li>Les levures German weizan et belges ne sont pas super bonne pour récolter au fond puisqu’elles ne sédimentent pas beaucoup. Récolté sur le dessus permettra de maintenir la levure en meilleure santé pour de plus longues générations.</li>
-                 	<li>Le meilleur moment pour récolter sur le dessus est lorsque la mousse est à son maximum. Le premier tiers de la mousse est riche en protéine, on ne le veut pas. On veut les deux autres tiers.</li>
-                 	<li>Utiliser une large cuillère en inox.</li>
-                 	<li>Essayer d’enlever le couvercle lorsqu’il n’y a pas de mouvement de l’air. Ne pas enlever le couvercle complètement.</li>
-                </ul>
-                <h3>Bottom cropping</h3>
-                <ul>
-                 	<li>Désavantages: Plus de déchets dans les sédimentations, c’est plus long avant de récupérer les levures, les levures sont sous la pression, il y a de la mauvaise levure.</li>
-                 	<li>Lorsque la fermentation est terminée, les levures commencent à utiliser leurs réserves et “break down”</li>
-                </ul>
-                <h3>Rinçage de levures (Yeast P.168)</h3>
-                Mettre le slurry dans le l'eau stérile, brasser vigoureusement, laisser reposer 10 A 15 minutes. Décanter le dessus, récupérer le milieu et jeter le fond, 4x le volume de slurry en eau, Contenant étroit et haut laissé du vide en haut
-                <h3>Revitaliser</h3>
-                0,5 ml de mout A 1,080 par 10 ml de slurry sans aération pendant 4 A 12 heures. Prendre le liquide en suspension en décantant et jeter le fond
-
-            </div>
-
-        </div>
-        <!-- /.row -->
-        <hr>
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-8">
-                <a class="btn btn-lg btn-default btn-block" href="#Levures">Haut de la page</a>
-            </div>
-        </div>
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; alexandrepigeon.ca 2017</p>
+                        <li><a href="base-de-donnees.html">Base de données</a></li>
+                        <!--==================================RECHERCHES DROPDOWN MENU========================================-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recherches<b class="caret"></b></a>
+                            <ul class="dropdown-menu" id="ul-navbar">
+                                <li><a href="recherches.html">Présentation</a></li>
+                                <li><a href="recherches-eau.html">Eau</a></li>
+                                <li><a href="recherches-grains.html">Grains</a></li>
+                                <li><a href="recherches-houblons.html">Houblons</a></li>
+                                <li><a href="recherches-levures.html">Levures</a></li>
+                                <li><a href="recherches-manipulations.html">Manipulations</a></li>
+                                <li><a href="recherches-degustation.html">Dégustation</a></li>
+                            </ul>
+                        </li>
+                        <!--========================================RECETTES DROPDOWN MENU====================================-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recettes<b class="caret"></b></a>
+                            <ul class="dropdown-menu" id="ul-navbar">
+                                <li><a href="recettes.html">Présentation</a></li>
+                                <li><a href="recettes-houblonnee-47-48.html">Pale Ale Houblonnée</a></li>
+                                <li><a href="recettes-ambree-37.html">Ale Ambrée</a></li>
+                                <li><a href="recettes-witbier-49.html">Witbier Orange Coriandre</a></li>
+                                <li><a href="recettes-lager-41.html">Lager</a></li>
+                                <li><a href="recettes-abbaye-45.html">Abbaye</a></li>
+                                <li><a href="recettes-stout-46.html">Stout</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="equipe.html">Notre équipe</a></li>
+                        <li><a href="nousjoindre.html">Nous joindre</a></li>
+                    </ul>
                 </div>
             </div>
-        </footer>
+            <!-- /.container -->
+        </nav>
+        <!--===================================== /.navbar-collapse============================================= -->
 
-    </div>
-    <!-- /.container -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Page Content -->
+        <div class="container" id="ombrage">
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="app/js/index.js"></script>
-</body>
+            <!-- Page Heading/Breadcrumbs -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Levures</h1>
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Accueil</a>
+                        </li>
+                        <li class="active"><a href="recherches.html">Recherches</a></li>
+                        <li class="active" id="Levures">Levures</li>
+                    </ol>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <!-- Content Row -->
+            <div class="row">
+
+                <!-- Blog Post Content Column -->
+                <div class="col-lg-12">
+                    <p>
+                        <strong>Sources</strong>
+                        :
+                    </p>
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://www.youtube.com/watch?v=AbMedkH9_P0">
+                                Conférence Chris White de White Labs
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.youtube.com/watch?v=Y2FiNMzUtUU">
+                                Résumé conférence Chris White de White Labs
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://byo.com/mead/item/635-fermentation-time-line">
+                                https://byo.com/mead/item/635-fermentation-time-line
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.youtube.com/watch?v=rZ167ofFwu4">
+                                Améliorer la qualité de la bière : Homebrew Academy
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                target="_blank" href="http://braukaiser.com/blog/blog/2012/08/24/yeast-pitching-by-weight/"
+                                >
+                                Quantité de levures par masse : Braukaiser
+                            </a>
+                        </li>
+                    </ul>
+                    <p>
+                        Les levures jouent un rôle primordial dans la fabrication de la bière et
+                        leurs effets sur les saveurs dans le produit final sont très nombreux.
+                        Elles sont disponibles sous forme déshydratée et sous forme liquide.
+                        Entreposées au réfrigérateur, les levures déshydratées ont une durée de vie
+                        plus longue et sont moins dispendieuses que celles liquides. Il est
+                        important de noter que la réhydratation des levures sèches augmente
+                        grandement la quantité de cellules disponibles. Par contre, la
+                        transformation que subit la membrane lors du processus de déshydratation
+                        modifie leurs comportements altérant ainsi les résultats obtenus. Bien que
+                        les levures liquides aient une durée de vie limitée, il y a sur le marché
+                        une plus grande variété de saveurs authentiques et les produits finis sont
+                        généralement plus satisfaisants.
+                    </p>
+                    <p>
+                        Lors de l’achat de levures, il est important de vérifier la date de
+                        fabrication, puisque la viabilité diminue en fonction de leur âge. Si un
+                        fournisseur possède le style souhaité dans les deux grands fabricants,    <a target="_blank" href="https://www.wyeastlab.com/beer-strains">Wyeast</a> et
+                        <a
+                            target="_blank" href="http://www.whitelabs.com/yeast-bank?keywords=&amp;flocculation=0&amp;type=yeasts&amp;temp_from=1&amp;temp_to=100&amp;atten_from=1&amp;atten_to=100&amp;tolerance=0&amp;drink_type=0&amp;yeast_type=0&amp;op=SHOW+ALL+STRAINS&amp;form_build_id=form-ucysclUfCLJMLJmUd9ebc67c-N0ggN9d9Wjjaw8rc10&amp;form_id=whitelabs_yeast_yeast_bank_form"
+                            >
+                            White Labs
+                        </a>
+                        , il est recommandé de prendre celle qui est la plus fraiche. Par contre,
+                        on retrouve uniquement dans les levures Wyeast la petite poche de
+                        nutriments et de sucre permettant de les activer et de rincer adéquatement
+                        le contenant. Si la levure doit se faire transporter par une entreprise
+                        tierce, il est possible d’utiliser un
+                        <a
+                            target="_blank" href="http://www.labelmaster.com/shop/shipping/damage-indicators/coldmark-freeze-indicator/"
+                            >
+                            indicateur de gel
+                        </a>
+                        ou un
+                        <a
+                            target="_blank" href="http://shockwatch.com/products/temperature/temperature-indicators/warmmark"
+                            >
+                            indicateur de chaleur
+                        </a>
+                        . Par exemple, les levures congelées sans glycogène ou ayant atteint une
+                        température trop élevée pendant leur transport risquent de mourir.
+                    </p>
+                    <p>
+                        Afin de réussir un brassin, il est essentiel de fermenter le mout en
+                        ajoutant une quantité adéquate de levures en santé dans un environnement à
+                        la bonne température et suffisamment oxygéné. Comme c’est généralement lors
+                        de la multiplication que la levure dégage des esters et des phénols, plus
+                        on met de levure, moins les saveurs sont développées. Par exemple, une
+                        saison belge avec beaucoup de levures au départ est très simple et ne
+                        respecte pas le style. Il faut donc s’assurer que les levures travaillent
+                        suffisamment pour développer les saveurs complexes tant recherchées. Une
+                        ale ambrée avec très peu de levures a un gout prononcé de levures et est
+                        d’avantage fruitée. Ainsi, il est important de connaitre à l’avance la
+                        quantité de mout à fermenter et sa densité afin de faire un levain « Yeast
+                        Starter » permettant de proliférer des cellules.
+                    </p>
+                    <h2>Levain « Yeast Starter»</h2>
+                    <p>
+                        <strong>Source :</strong>
+                    </p>
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://www.youtube.com/watch?v=jMhFerNTwbQ">
+                                Vidéo explicative sur les manipulations
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                target="_blank" href="https://d.docs.live.net/7bb4e104d0bee2b8/Bi%C3%A8res/Maxime%20Ouelette/Brassage/Formation%20continue/%E2%80%A2%09http:/beersmith.com/blog/2008/04/01/making-a-yeast-starter-for-your-home-brew-beer/"
+                                >
+                                Yeast Starter : BeerSmith
+                            </a>
+                        </li>
+                    </ul>
+                    <p>
+                        Un levain consiste à faire proliférer les levures en leur fournissant une
+                        petite quantité de mout, généralement à partir d’extrait de malt, ainsi que
+                        suffisamment d’oxygène pendant 24 à 48 heures avant de les transférer dans
+                        une plus grande quantité de mout.
+                        <a
+                            target="_blank" href="https://www.brewersfriend.com/yeast-pitch-rate-and-starter-calculator/"
+                            >
+                            Brewer’s Friend
+                        </a>
+                        , offre gratuitement un outil en ligne permettant d’estimer la quantité de
+                        levure requise. Le ratio de levures « Target Pitch Rate » est fonction du
+                        type de bière et de sa densité initiale. En effet, les bières à forte
+                        densité initiale, ainsi que les Lagers ont besoin davantage de levures afin
+                        de produire des résultats satisfaisants.
+                    </p>
+                    <p>
+                        Une règle du pouce intéressante est qu’un sachet de levures un levain deux
+                        litres, oxygénés avec un agitateur magnétique, va doubler la quantité de
+                        cellules en 24 heures. Ensuite, il est recommandé de le laisser reposer au
+                        réfrigérateur, afin de décanter le liquide fermenté et recommencer
+                        l’opération si le nombre de cellules n’est pas adéquat « Stepped Starter ».
+                        Il est important d’allouer au minium 12 heures avant de décanter, lorsque
+                        le mout a atteint sa gravité finale afin de permettre aux levures de
+                        remplir leur réserve de glycogène et d’emmagasiner suffisamment d’énergie
+                        pour recommencer à travailler. De plus, si les levures sont séparées du
+                        levain trop tôt, les levures qui sédimentent moins vite, responsables en
+                        grande partie de l’atténuation, seront éliminées. Il est également très
+                        important, comme c’est le cas pour tout liquide fermenté, d’être dans un
+                        endroit à d’abris de la lumière.
+                    </p>
+                    <p>
+                        Dans certains cas, les signes de la fermentation ne sont pas évidents. Il
+                        est alors nécessaire de s’assurer que la levure a effectivement consommé le
+                        sucre par une mesure de la densité. Bien qu’une prolifération de 24 heures
+                        permet d’ajouter une levure en pleine activité «
+                        <a target="_blank" href="https://www.thespruce.com/homebrewing-krausen-definition-353255">
+                            High krausen
+                        </a>
+                        », assurant ainsi une phase de latence plus courte, il est possible que la
+                        bière ne s’atténue pas complètement. Ainsi, il est recommandé de laisser
+                        les levures proliférer pendant 48 heures, afin de leur permettre
+                        d’atteindre la phase stationnaire, de remplir leurs réserves de glycogène
+                        et d’emmagasiner suffisamment d’énergie pour recommencer à travailler. Le graphique suivant illustre la prolifération des
+                        levures en fonction du temps.
+                    </p>
+                    <img class="img-responsive center-block" src="app/images/recherches/levures/starter_pitch_rate.png" alt="" />
+
+                    <p>
+                        Bien que certaines sources proposent une température entre 27°C et 30°C
+                        afin d’accélérer la multiplication des cellules, celle recommandée est
+                        d’environ 22°C, puisque si elle est trop haute, cela risque d’affaiblir les
+                        levures. La densité du mout pour un levain est idéalement de 1,036. La
+                        quantité d’extraits de malt pour atteindre cette densité est autour de 1
+                        g/10 ml de mout. Dans le cas où les levures sont très vieilles, ou
+                        récupérée à partir d’une bouteille commerciale, un mout autour de 1,020 est
+                        plus adéquat.
+                    </p>
+                    <p>
+                        Les nutriments à levures ne sont pas nécessaires si la levure provient d’un
+                        sachet neuf. Par contre, dans le cas d’une levure réutilisée, il est
+                        recommandé d’en ajouter. Il est possible de conserver du mout frais, au
+                        réfrigérateur, provenant d’un brassin antérieur. Celui-ci devrait avoir
+                        suffisamment de nutriments pour combler le besoin des levures. Également,
+                        l’ajout de houblon totalisant près de 20 IBU permet de prévenir les
+                        contaminations. Un excès d’acide alpha risque toutefois de réduire la
+                        viabilité des levures. Le pH idéal pour un levain est autour de 5,5.
+                    </p>
+                    <p>
+                        Les levures sont très sensibles aux changements brusques de température. En
+                        effet, il faut limiter ces différences à 6°C.
+                    </p>
+                    <h2>Fermentation
+                    </h2>
+                    <p>
+                        La fermentation est le processus par lequel les sucres fermentescibles sont
+                        transformés en alcool par les levures. Lorsque la levure est ajoutée dans
+                        le mout, il y a une phase de latence suivie d’une phase de croissance
+                        exponentielle, puis de la phase stationnaire.
+                    </p>
+                    <p>
+                        À l’aide du calculateur gratuit en ligne de    <a target="_blank" href="https://www.brewersfriend.com/abv-calculator/">Brewer’s Friend</a>
+                        , il est facile d’estimer la quantité d’alcool à partir de la différence
+                        entre la densité initiale et finale. Cette différence s’appelle
+                        l’atténuation et s’exprime en pourcentage. Ainsi, pour une bière ayant une
+                        densité initiale de 1,050 et une densité finale de 1,010, une atténuation
+                        de 75% correspond à la densité au trois quarts de la fermentation,
+                        c’est-à-dire 1,020.
+                    </p>
+                    <p>
+                        Chaque levure à des traits qui lui sont propres. Par exemple, passer d'une
+                        levure de Californie à une levure anglaise pour la même recette de bière
+                        accentue le gout sucré du malt et des esters fruités. Il est possible
+                        d’ajouter plus d’une souche de levures dans le même brassin à différents
+                        stades de la fermentation. Par exemple, il est possible d’ajouter une sorte
+                        de levure spécifique vers la fin de la fermentation et plus la quantité de
+                        sucre est importante, plus l'impact sera important. Il est également
+                        possible d’ajouter de la levure en fermentation active « High Krausen »
+                        afin d’atténuer davantage une bière, car l’alcool et la faible quantité de
+                        sucre disponible empêchent les levures de se réveiller. L’avantage de cette
+                        technique est qu’elle permet de modifier l’intensité de la caractéristique
+                        d’une souche en fonction de la quantité de sucre restant lors de l’ajout.
+                        Par contre, dans ce cas, la réutilisation de levures n’est pas recommandée.
+                    </p>
+                    <p>
+                        S’il est prévu de récupérer les levures, il est davantage important de
+                        s’assurer de garder une culture pure et saine. Tout d’abord, un suivi
+                        rigoureux des températures de fermentation permet de savoir si les cellules
+                        ont été dénaturées par de hautes températures. Ensuite, les levures doivent
+                        avoir eu suffisamment de nutriments et idéalement ne pas avoir fermenté de
+                        la bière plus forte que 7%.
+                    </p>
+                    <p>
+                        Il est possible d’utiliser un    <a target="_blank" href="http://www.mrmalty.com/calc/calc.html">calculateur</a> afin
+                        d’estimer la quantité de cellules en fonction de la masse des levures
+                        récupérées. Par la suite, une extrapolation peut être effectuée à partir du
+                        nombre de cellules vivantes en utilisant un microscope, un hématimètre et
+                        du bleu de méthylène. Habituellement, lorsqu’on récolte la levure, elle est
+                        entre 0,8 et 2 millions de cellules par millilitre. Afin de produire un
+                        résultat constant, il est important de récolter les levures au stade
+                        optimal et être assidu dans le comptage des cellules ou la masse des
+                        levures puis d’inscrire ces informations au registre.
+                    </p>
+                    <h3>Température
+                    </h3>
+                    <p>
+                        La température de fermentation permet de restreindre, ou d’amplifier, les
+                        saveurs qui sont développées par les levures durant la fermentation. En
+                        effet, celles-ci génèrent beaucoup de chaleur, ce qui fait augmenter la
+                        température du mout. Afin de contrer cette hausse, pour les ales il est
+                        recommandé de fermenter dans une pièce autour de 19°C, tandis que pour les
+                        Lagers autour de 12°C. Le premier 72 heures est le plus critique, car la
+                        majeure partie du travail s’effectue à ce moment. Il est important de
+                        s’assurer d’empêcher la température d’augmenter trop. Si la quantité de
+                        levures est adéquate, il est de bonne pratique de mettre les levures dans
+                        un mout dont la température est légèrement en dessous de celle de
+                        fermentation prévue puis d’augmenter graduellement en 12 à 36h, permettant
+                        ainsi de contrôler la multiplication des levures et l’énergie générée. Par
+                        contre, si la quantité est insuffisante, il est recommandé de mettre les
+                        levures à une température légèrement plus élevée, d’environ 2°C à 4°C, afin
+                        d’aider leur multiplication. Dans ce cas, il est important d’effectuer un
+                        repos de diacétyle « Diacetyl Rest » vers la fin de la fermentation, afin
+                        de permettre la réabsorption de certains composés.
+                    </p>
+                    <h3>Oxygène
+                    </h3>
+                    <p>
+                        <strong>Source :</strong>
+                    </p>
+                    <ul>
+                        <li>
+                            <a target="_blank" href="http://www.wyeastlab.com/oxygenation">
+                                Oxygénation : White Labs
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.morebeer.com/articles/oxygen_in_beer">
+                                Oxygène dans la bière: Brew Your Own
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                target="_blank" href="https://beerandbrewing.com/how-to-inject-pure-oxygen-into-wort/"
+                                >
+                                Oxygénation du mout : Beer And Brewing
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                target="_blank" href="http://www.brewerspublications.com/books/yeast-the-practical-guide-to-beer-fermentation/"
+                                >
+                                Yeast P.75
+                            </a>
+                        </li>
+                    </ul>
+                    <p>
+                        Au début de la fermentation, il est de la plus haute importance de fournir
+                        suffisamment d’oxygène aux levures. En effet, la reproduction étant
+                        aérobique, une quantité d’oxygène adéquate assure une haute viabilité et de
+                        bonnes performances lors de la fermentation. Il est à noter que la quantité
+                        d’oxygène dissous est presque nulle après la période d’ébullition. Une
+                        fermentation avec une faible quantité d’oxygène se présente sous une forme
+                        beaucoup plus bouetteuse et la bière risque de contenir des saveurs
+                        désagréables et de ne pas s’atténuer complètement ou de prendre très
+                        longtemps avant d’y parvenir. De plus, la récupération de ces levures n’est
+                        pas recommandée en raison du faible taux de viabilité. Il est suggéré
+                        d’avoir entre 8 et 12 ppm pour une bière de densité moyenne et pour une
+                        bière très haute en gravité, il est nécessaire d’ajouter de l'oxygéner à
+                        nouveau après la première division des cellules, soit entre 12 et 18
+                        heures, afin de réduire les sous-produits tel le diacétyle et
+                        l’acétaldéhyde. Le tableau suivant présente la quantité d’oxygène dissous
+                        en fonction des différentes méthodes d’aération.
+                    </p>
+                    <table class="table" style="max-width: 800px">
+                        <thead><tr><th>Méthode d'aération pour 20 L</th><th>Temps (min)</th><th>Quantité d'oxygène (ppm)</th></tr></thead><tbody>
+                            <tr><td>Transfert avec éclaboussures</td><td>0 </td><td>4</td></tr>
+                            <tr><td>Brassage vigoureux</td><td>1</td><td>8</td></tr>
+                            <tr><td>Pompe d'aquarium</td><td>5</td><td>8</td></tr>
+                            <tr><td>Oxygène pure</td><td>1</td><td>12</td></tr>
+                        </tbody></table>
+                    <h2>Diacétyle</h2>
+
+                    <strong>Source :</strong>
+
+                    <ul>
+                        <li>
+                            <a
+                                target="_blank" href="http://beersmith.com/blog/2012/04/21/diacetyl-in-home-brewed-beer-the-butterscotch-flavor/"
+                                >
+                                Diacétyle : BeerSmith </a>
+                        </li>
+                        <li>
+
+                            <a
+                                target="_blank" href="http://beersmith.com/blog/2012/01/29/diaceytl-in-beer-with-charlie-bamforth-beersmith-podcast-31/"
+                                >
+                                Podcast sur le diacétyle : BeerSmith et Charlie Bamforth
+                            </a>
+
+                        </li>
+                        <li>
+                            <a
+                                target="_blank" href="http://byo.com/hops/item/534-dealing-with-diacetyl-tips-from-the-pros"
+                                >
+                                Controller le diacétyle : Brew Your Own
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.eckraus.com/blog/determination-of-diacetyl-in-beer">
+                                Controller le diacétyle : Eckraus
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                target="_blank" href="http://www.whitelabs.com/sites/default/files/Diacetyl_Time_Line.pdf"
+                                >
+                                Évolution du diacétyle: White Labs
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                target="_blank" href="http://www.brewerspublications.com/books/yeast-the-practical-guide-to-beer-fermentation/"
+                                >
+                                Yeast P.111
+                            </a>
+                        </li>
+                    </ul>
+                    <p>
+                        Pendant la reproduction des levures, le précurseur du diacétyle,
+                        l’acétolactate, est produit. Pendant la phase stationnaire, en fonction des
+                        conditions de santé, d’activité, de température et d’oxygène, une certaine
+                        quantité est normalement réabsorbée et transformée en d’autres composés
+                        quasi indétectables. C’est lorsque survient l’oxydation de l’acétolactate
+                        n’ayant pas été réabsorbé que ce dernier se transforme en diacétyle,
+                        résultant en un gout de beurre désagréable. Il est donc important de ne pas
+                        refroidir la bière ou d’en enlever les levures trop tôt. Suite à la
+                        fermentation primaire, trois jours sont suffisant pour les Ales, tandis que
+                        sept sont nécessaire pour les Lagers.
+                    </p>
+                    <p>
+                        Lors de la multiplication des cellules, un taux de croissance plus haut
+                        entrainera plus d’acétolactate. C’est pourquoi il est important d’avoir la
+                        bonne quantité de levures dès le début. Plus la température est haute, plus
+                        il y a de multiplication, mais également plus la réduction du diacetyl sera
+                        rapide. Plus la température est froide, plus il y aura de sulfure et il
+                        sera plus difficile pour la levure de réabsorber le l’acétolactate, d’où
+                        l’importance de faire un repos du diacétyle « Diacetyl Rest ». Celui-ci
+                        consiste à élever la température de la bière de 2°C à 3°C avant la fin de
+                        la fermentation.
+                    </p>
+                    <p>
+                        Il est possible de révéler la présence d’acétolactate par un simple test.
+                        Celui-ci consiste à prendre deux échantillons de la bière et d’en chauffer
+                        un seul à 70°C pendant 20 minutes. Ensuite, il faut faire refroidir les
+                        deux échantillons à la même température et les comparer l’un à l’autre.
+                        S’il est possible de percevoir des notes de beurres ou de mais éclaté, il
+                        ne faut pas transférer tout de suite.
+                    </p>
+                    <p>
+                        Afin de réduire le diacetyl, les points suivants sont de mises.
+                    </p>
+                    <ol>
+                        <li>S’assurer que la propreté est impeccable;</li>
+                        <li>Période d’ébullition vigoureuse sans couvercle;</li>
+                        <li>Utiliser des nutriments à levures si nécessaire;</li>
+                        <li>Utiliser une quantité suffisante de levures en santé;</li>
+                        <li>Éviter de séparer la bière de la levure ou de la refroidir trop tôt;</li>
+                        <li>Éviter tout contact avec l’air lors des transferts;</li>
+                        <li>Choisir des types de levures connues pour produire peu de diacetyl;</li>
+                        <li>En dernier recours, il est possible d’utiliser la méthode de «
+                            Krausening » qui consiste à ajouter de nouvelles levures fraiches et
+                            actives en fin de fermentation.</li>
+
+
+                    </ol>
+
+                    <h2>Récoltes et conservation</h2>
+                    <strong>
+                        Sources :
+                    </strong>
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://www.youtube.com/watch?v=Rjupj9DN9aI">
+                                Nettoyer les levures
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                target="_blank" href="https://d.docs.live.net/7bb4e104d0bee2b8/Bi%C3%A8res/Maxime%20Ouelette/Brassage/Formation%20continue/%E2%80%A2%09http:/braukaiser.com/blog/blog/2012/08/24/yeast-pitching-by-weight/"
+                                >
+                                Quantité de levures par masse
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                target="_blank" href="http://www.brewerspublications.com/books/yeast-the-practical-guide-to-beer-fermentation/"
+                                >
+                                Yeast P.148-156
+                            </a>
+                        </li>
+                    </ul>
+                    <p>
+                        Afin de récolter les levures en santés, plusieurs conditions sont
+                        nécessaires. Elles doivent tout d’abord avoir eu suffisamment d’oxygène et
+                        de nutriments pendant la fermentation. Les températures de fermentation
+                        doivent être inférieur à 26°C et ne pas avoir subi de brusque changement de
+                        température. Le pourcentage d’alcool ne doit pas être supérieur à 7%. Le
+                        meilleur moment pour récolter la levure est un à deux jours après avoir
+                        commencé le refroidissement post-fermentation.
+                    </p>
+                    <p>
+                        Les levures peuvent se conserver, autour de 2°C, 1 à 2 semaines sans
+                        refaire de levain et peuvent être réutilisées de 5 à 10 fois ou pendant
+                        environ 2 mois. Il est à noter qu’après un mois dans le réfrigérateur, la
+                        vitalité des levures est d’environ à 50%. Dans le cas d’une augmentation du
+                        pH d’un, cela signifie que le taux de mortalité est haut et cette levure ne
+                        devrait pas être utilisée. Selon certaines sources, la 3<sup>e</sup>
+                        génération serait celle permettant d’obtenir les meilleurs résultats.
+                    </p>
+                    <p>
+                        Il existe plusieurs méthodes afin de récupérer les levures, tout dépendant
+                        du contenant de fermentation.
+                    </p>
+                    <p>
+                        La technique de « Top Cropping » consiste à récupérer les levures sur le
+                        dessus pendant la fermentation primaire, permettant ainsi d’avoir de la
+                        levure en santé et de maintenir la qualité de la bière au fils des
+                        générations. Pour se faire, il est possible d’utiliser une large cuillère
+                        très propre et il est important de ne pas enlever complètement le couvercle
+                        tout en se méfiant des courants d’air. Certaines levures sont idéals pour
+                        être récoltées sur le dessus, puisqu’elle ne sédimente pas beaucoup. Le
+                        meilleur moment pour récolter est lorsque la mousse est à son maximum. Le
+                        premier tiers de la mousse est riche en protéine et ne doit pas être
+                        utilisé. Ce sont alors les levures situées dans les deux tiers inférieurs
+                        qui sont intéressantes.
+                    </p>
+                    <p>
+                        Un seconde technique « Bottom Cropping » consiste à agiter le fond de la
+                        cuve de fermentation afin de liquéfier les levures et de les verser dans
+                        contenant stérile. Si un tourbillon efficace « whirlpool » a été effectué,
+                        il ne devrait pas y avoir trop de déchets dans les sédiments. Contrairement
+                        à un fermenteur conique, les cuves de fermentation standard ne permettent
+                        pas de récupérer facilement et à n’importe quel moment les levures.
+                    </p>
+                    <h3>Rinçage de levures</h3>
+                    <strong>
+                        Sources :
+                    </strong>
+                    <ul>
+                        <li>
+                            <a
+                                target="_blank" href="http://beersmith.com/blog/2008/07/25/yeast-washing-reusing-your-yeast/"
+                                >
+                                Rinçage des levures: BeerSmith
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://homebrewacademy.com/yeast-washing/">
+                                Rinçage des levures: Homebrew Academy
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                target="_blank" href="http://www.brewerspublications.com/books/yeast-the-practical-guide-to-beer-fermentation/"
+                                >
+                                Yeast P.168
+                            </a>
+                        </li>
+                    </ul>
+                    <p>
+                        Selon certaines sources, le rincage des levures n’est pas nécessaire. Si un
+                        bon whirpool est fait, ça ne vaut pas la peine de risquer d’introduire une
+                        source de contamination.
+                    </p>
+                    <p>
+                        Afin de rincer les levures, il faut les mettre dans le l'eau stérile,
+                        brasser vigoureusement puis laisser reposer de 10 à 15 minutes. Ensuite, il
+                        faut décanter le dessus, récupérer le milieu et jeter le fond. Cela
+                        nécessite environ quatre fois le volume de levures en eau.
+                    </p>
+                    <h3>Revitaliser</h3>
+                    <p>
+                        0,5 ml de mout A 1,080 par 10 ml de slurry sans aération pendant 4 A 12
+                        heures. Prendre le liquide en suspension en décantant et jeter le fond
+                    </p>
+                    <h3>Congélation</h3>
+                    <p>
+                        <a
+                            target="_blank" href="https://eurekabrewing.wordpress.com/2012/08/24/yeast-banking-2-agar-plates/"
+                            >
+                            https://eurekabrewing.wordpress.com/2012/08/24/yeast-banking-2-agar-plates/
+                        </a>
+                    </p>
+                    <p>
+
+                        <a target="_blank" href="https://bkyeast.wordpress.com/2012/02/19/selective-media-part-i/">
+                            Mélange agar
+                        </a>
+                    </p>
+                    <p>
+                        <a
+                            target="_blank" href="https://eurekabrewing.wordpress.com/2012/02/03/about-sabouraud-agar-plates/"
+                            >
+                            https://eurekabrewing.wordpress.com/2012/02/03/about-sabouraud-agar-plates/
+                        </a>
+                    </p>
+                    <p>
+                        <a
+                            target="_blank" href="http://braukaiser.com/wiki/index.php?title=Growing_Yeast_from_a_Plate"
+                            >
+                            http://braukaiser.com/wiki/index.php?title=Growing_Yeast_from_a_Plate
+                        </a>
+                    </p>
+
+
+
+
+                </div>
+
+            </div>
+            <!-- /.row -->
+            <hr>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-8">
+                    <a class="btn btn-lg btn-default btn-block" href="#Levures">Haut de la page</a>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Footer -->
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Copyright &copy; alexandrepigeon.ca 2017</p>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+        <!-- /.container -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="app/js/index.js"></script>
+
+
+    </body>
 
 </html>
